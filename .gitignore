@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test coverage
+.coverage
+tests/coverage/
+
+# Example files
+examples/*.sqlite3
+
+# Generated docs
+site/

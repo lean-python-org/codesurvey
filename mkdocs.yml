@@ -1,0 +1,54 @@
+site_name: CodeSurvey
+repo_url: https://github.com/when-of-python/codesurvey/
+site_description: Documentation for CodeSurvey
+nav:
+  - README: 'README.md'
+  - Core CodeSurvey: 'core.md'
+  - Results Database: 'database.md'
+  - Sources:
+      - Core Sources: 'sources/core.md'
+  - Analyzers:
+      - Core Analyzers: 'analyzers/core.md'
+      - Feature Finders: 'analyzers/features.md'
+      - Languages:
+          - Python: 'analyzers/python.md'
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            heading_level: 3
+            docstring_section_style: list
+            members_order: source
+            show_root_heading: true
+            show_signature_annotations: true
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+
+theme:
+  name: material
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+extra_css:
+  - stylesheets/extra.css

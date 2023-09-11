@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "codesurvey"
+version = "0.1.0"
+description = "Analyse source code repositories for language feature and library usage."
+license = "MIT"
+authors = ["Ben Denham <ben@denham.nz>", "Grant Paton-Simpson <grant@p-s.co.nz>"]
+readme = "README.md"
+repository = "https://github.com/when-of-python/codesurvey"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+tqdm = "^4.64.0"
+astpath = "^0.9.0"
+peewee = "^3.15.2"
+lxml = "^4.9.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.971"
+flake8 = "^5.0.4"
+pytest-cov = "^3.0.0"
+types-requests = "^2.28.9"
+mkdocs = "^1.5.2"
+mkdocstrings-python = "^1.5.2"
+mkdocs-material = "^9.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
