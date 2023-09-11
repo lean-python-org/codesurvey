@@ -12,3 +12,6 @@ examples/*.sqlite3
 
 # Generated docs
 site/
+
+# Build
+dist/
