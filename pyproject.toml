@@ -2,7 +2,7 @@
 name = "codesurvey"
 version = "0.1.0"
 description = "Analyse source code repositories for language feature and library usage."
-license = "MIT"
+license = "GPL-3.0-only"
 authors = ["Ben Denham <ben@denham.nz>", "Grant Paton-Simpson <grant@p-s.co.nz>"]
 readme = "README.md"
 repository = "https://github.com/when-of-python/codesurvey"
