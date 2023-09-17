@@ -85,7 +85,7 @@ class CodeSurveyRunner:
         cols = 10
         screen_shape = _screen_shape_wrapper()
         if screen_shape:
-            cols, _ = screen_shape(sys.stderr)
+            cols = screen_shape(sys.stderr)[0] or cols
 
         bar_format_with_total = '{desc}: {n_fmt}/{total_fmt} [{elapsed}, {rate_fmt}{postfix}]|{bar}| {percentage:3.0f}% [{remaining} remaining]'
         bar_format_without_total = '{desc}: {n_fmt} [{elapsed}, {rate_fmt}{postfix}]'
