@@ -20,7 +20,7 @@ print(survey.get_survey_tree())
 
 """
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 from .core import CodeSurvey
 from .database import RepoFeature, CodeFeature

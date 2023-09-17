@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "codesurvey"
-version = "0.1.0"
+version = "0.1.1"
 description = "Analyse source code repositories for language feature and library usage."
 license = "GPL-3.0-only"
 authors = ["Ben Denham <ben@denham.nz>", "Grant Paton-Simpson <grant@p-s.co.nz>"]
