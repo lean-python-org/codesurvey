@@ -68,7 +68,7 @@ class CodeSurveyRunner:
         if progress_analyzer_features is None:
             all_features = [
                 feature
-                for features in self.analyzer_features
+                for features in self.analyzer_features.values()
                 for feature in features
             ]
             max_auto_feature_progress = 10
