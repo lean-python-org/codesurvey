@@ -454,11 +454,11 @@ class Database:
         if source_names is not None:
             query = query.where(self.CodeFeatureModel.source_name.in_(source_names))
         if repo_keys is not None:
-            query = query.where(self.RepoFeatureModel.repo_key.in_(repo_keys))
+            query = query.where(self.CodeFeatureModel.repo_key.in_(repo_keys))
         if analyzer_names is not None:
             query = query.where(self.CodeFeatureModel.analyzer_name.in_(analyzer_names))
         if feature_names is not None:
-            query = query.where(self.RepoFeatureModel.feature_name.in_(feature_names))
+            query = query.where(self.CodeFeatureModel.feature_name.in_(feature_names))
 
         metadata_cache = self._get_repo_metadata_cache()
         return [
