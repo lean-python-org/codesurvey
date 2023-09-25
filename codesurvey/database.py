@@ -330,7 +330,7 @@ class Database:
                         # Sum of all occurrences in CodeFeatureModels
                         fn.SUM(self.CodeFeatureModel.occurrence_count),
                         # Count of all CodeFeatureModels with at least one occurrence
-                        fn.SUM(fn.MAX(self.CodeFeatureModel.occurrence_count, 1)),
+                        fn.SUM(fn.MIN(self.CodeFeatureModel.occurrence_count, 1)),
                         # Count of all CodeFeatureModels
                         fn.COUNT(),
                     )
