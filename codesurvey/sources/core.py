@@ -318,7 +318,7 @@ class GithubSampleSource(Source):
         return {
             # Return the total number of result pages that can be
             # sampled from.
-            'page_count': max(self.MAX_RESULTS, r_json['total_count']) / self.REPOS_PER_PAGE,
+            'page_count': min(self.MAX_RESULTS, r_json['total_count']) / self.REPOS_PER_PAGE,
             # Restrict the list of returned repos to those that
             # have the (optionally) specified language.
             'repos': [
@@ -357,7 +357,7 @@ class GithubSampleSource(Source):
         while True:
             logger.info(f'Source "{self}" searching GitHub for repos')
             search_result = self._search_repos(page=rng.randint(1, page_count))
-            page_count = search_result['page_count']
+            page_count = int(search_result['page_count'])
             for repo_data in search_result['repos']:
                 yield self.repo_thunk(
                     key=repo_data['full_name'],
