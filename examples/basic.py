@@ -15,7 +15,7 @@ survey = CodeSurvey(
             '.',
         ]),
         GitSource([
-            'https://github.com/when-of-python/blog.git',
+            'https://github.com/lean-python-org/blog.git',
         ]),
         GithubSampleSource(language='python'),
     ],

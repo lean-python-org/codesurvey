@@ -7,7 +7,7 @@
 </a>
 
 <p>
-    <a href="https://github.com/when-of-python/codesurvey">GitHub</a> - <a href="https://when-of-python.github.io/codesurvey">Documentation</a>
+    <a href="https://github.com/lean-python-org/codesurvey">GitHub</a> - <a href="https://lean-python-org.github.io/codesurvey">Documentation</a>
 </p>
 
 </div>
@@ -77,18 +77,18 @@ repo_count_with_math = sum([
 print(f'{repo_count_with_math} out of {len(repo_features)} repos use math')
 ```
 
-![Animated GIF of CodeSurvey demo on the command-line](https://when-of-python.github.io/codesurvey/images/codesurvey-demo.gif)
+![Animated GIF of CodeSurvey demo on the command-line](https://lean-python-org.github.io/codesurvey/images/codesurvey-demo.gif)
 
 * For more Sources of repositories, see [Source
-  docs](https://when-of-python.github.io/codesurvey/sources/core)
+  docs](https://lean-python-org.github.io/codesurvey/sources/core)
 * For more Analyzers and FeatureFinders, see [Analyzer
-  docs](https://when-of-python.github.io/codesurvey/analyzers/core)
+  docs](https://lean-python-org.github.io/codesurvey/analyzers/core)
 * For more options and methods for inspecting results, see
-  [`CodeSurvey` docs](https://when-of-python.github.io/codesurvey/core)
+  [`CodeSurvey` docs](https://lean-python-org.github.io/codesurvey/core)
 * For details on directly inspecting the sqlite database of survey
-  results see [Database docs](https://when-of-python.github.io/codesurvey/database)
+  results see [Database docs](https://lean-python-org.github.io/codesurvey/database)
 * More examples can be found in
-  [examples](https://github.com/when-of-python/codesurvey/tree/main/examples)
+  [examples](https://github.com/lean-python-org/codesurvey/tree/main/examples)
 
 
 ## Contributing

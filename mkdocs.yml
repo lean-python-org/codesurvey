@@ -1,5 +1,5 @@
 site_name: CodeSurvey
-repo_url: https://github.com/when-of-python/codesurvey/
+repo_url: https://github.com/lean-python-org/codesurvey/
 site_description: Documentation for CodeSurvey
 nav:
   - README: 'README.md'
